@@ -38,6 +38,9 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
         <Box> <div className="flex flex-col gap-y-4 px-5 py-4">{routes.map((item) =>(<SidebarItem key={item.label} {...item} ></SidebarItem>))}</div></Box>
         <Box className="overflow-y-auto h-full"> song library</Box>
       </div>
+      <main>
+        {children}
+      </main>
     </div>
   );
 };
